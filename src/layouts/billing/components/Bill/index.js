@@ -63,6 +63,9 @@ function Bill({ name, company, email, vat, noGutter }) {
             </MDBox>
             <MDButton variant="text" color={darkMode ? "white" : "dark"}>
               <Icon>edit</Icon>&nbsp;edit
+              <MDButton variant="text" color="error">
+                <Icon>input</Icon>&nbsp;tambah
+              </MDButton>
             </MDButton>
           </MDBox>
         </MDBox>

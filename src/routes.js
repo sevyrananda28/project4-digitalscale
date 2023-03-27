@@ -42,6 +42,8 @@ import Billing from "layouts/billing";
 import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
+import TableTruk from "layouts/tabletruk";
+import InputManual from "layouts/inputmanual";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -94,6 +96,22 @@ const routes = [
     icon: <Icon fontSize="small">login</Icon>,
     route: "/authentication/sign-in",
     component: <SignIn />,
+  },
+  {
+    type: "collapse",
+    name: "Table Truk",
+    key: "tabletruk",
+    icon: <Icon fontSize="small">table_view</Icon>,
+    route: "/tabletruk",
+    component: <TableTruk />,
+  },
+  {
+    type: "collapse",
+    name: "Input Manual",
+    key: "inputmanual",
+    icon: <Icon fontSize="small">input</Icon>,
+    route: "/inputmanual",
+    component: <InputManual />,
   },
 ];
 

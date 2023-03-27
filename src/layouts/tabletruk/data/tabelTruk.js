@@ -19,6 +19,8 @@ Coded by www.creative-tim.com
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import MDAvatar from "components/MDAvatar";
+import Icon from "@mui/material/Icon";
+import MDButton from "components/MDButton";
 
 export default function data() {
   const Author = ({ image, name, email }) => (
@@ -49,6 +51,8 @@ export default function data() {
       { Header: "beban kosong", accessor: "beban_kosong", align: "left" },
       { Header: "jenis truk", accessor: "jenis_truk", align: "left" },
       { Header: "beban max", accessor: "beban_max", align: "left" },
+      { Header: "action", accessor: "action", align: "left" },
+      { Header: "", accessor: "action1", align: "left" },
     ],
 
     rows: [
@@ -69,6 +73,16 @@ export default function data() {
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
             90 kg
           </MDTypography>
+        ),
+        action: (
+          <MDButton variant="text" color="dark">
+            <Icon>edit</Icon>&nbsp;edit
+          </MDButton>
+        ),
+        action1: (
+          <MDButton variant="text" color="error">
+            <Icon>delete</Icon>&nbsp;delete
+          </MDButton>
         ),
       },
     ],

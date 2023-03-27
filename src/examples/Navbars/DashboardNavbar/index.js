@@ -104,9 +104,9 @@ function DashboardNavbar({ absolute, light, isMini }) {
       onClose={handleCloseMenu}
       sx={{ mt: 2 }}
     >
-      <NotificationItem icon={<Icon>email</Icon>} title="Check new messages" />
-      <NotificationItem icon={<Icon>podcasts</Icon>} title="Manage Podcast sessions" />
-      <NotificationItem icon={<Icon>shopping_cart</Icon>} title="Payment successfully completed" />
+      <NotificationItem icon={<Icon>email</Icon>} title="Data Membutuhkan Verifikasi" />
+      <NotificationItem icon={<Icon>check</Icon>} title="Data telah di approve oleh supervisor" />
+      <NotificationItem icon={<Icon>warning</Icon>} title="Data telah terverifikasi" />
     </Menu>
   );
 

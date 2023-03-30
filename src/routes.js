@@ -44,6 +44,7 @@ import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import TableTruk from "layouts/tabletruk";
 import InputManual from "layouts/inputmanual";
+import MenuScan from "layouts/menuScan";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -112,6 +113,14 @@ const routes = [
     icon: <Icon fontSize="small">input</Icon>,
     route: "/inputmanual",
     component: <InputManual />,
+  },
+  {
+    type: "collapse",
+    name: "MenuScan",
+    key: "menuScan",
+    icon: <Icon fontSize="small">camera</Icon>,
+    route: "/menuScan",
+    component: <MenuScan />,
   },
 ];
 
